@@ -28,9 +28,16 @@ class HomePage extends Page {
         return $("class=android.widget.Toast");
     }
 
+    get speedTestButton () {
+        return $("id=speedTest");
+    }
+
+    get webviewElement () {
+        return $("id=webbrowser");
+    }
+
     /**
-     * a method to encapsule automation code to interact with the page
-     * e.g. to login using username and password
+     * method to click a element
      */
     async clickElement (element) {
         const button = await element;
